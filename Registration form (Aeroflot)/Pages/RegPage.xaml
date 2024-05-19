@@ -1,0 +1,530 @@
+﻿<Page x:Name="RegFrame" x:Class="Registration_form__Aeroflot_.Pages.RegPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Registration_form__Aeroflot_.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1920" d:DesignWidth="1080"
+      Title="RegPage" FontFamily="Times New Roman">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition x:Name="CardGrd1"/>
+            <RowDefinition x:Name="CardGrd2"/>
+            <RowDefinition x:Name="CardGrd3"/>
+            <RowDefinition x:Name="CardGrd4"/>
+            <RowDefinition x:Name="CardGrd5"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition x:Name="PersDataGrd1"/>
+            <RowDefinition x:Name="PersDataGrd2"/>
+            <RowDefinition x:Name="PersDataGrd3"/>
+            <RowDefinition x:Name="PersDataGrd4"/>
+            <RowDefinition x:Name="PersDataGrd5"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition x:Name="PassportGrd1"/>
+            <RowDefinition x:Name="PassportGrd2"/>
+            <RowDefinition x:Name="PassportGrd3"/>
+            <RowDefinition x:Name="PassportGrd4"/>
+            <RowDefinition x:Name="PassportGrd5"/>
+            <RowDefinition Height="auto"/>
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="13" Grid.RowSpan="3" Background="White">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.ColumnSpan="8"  Grid.Row="0" Content="Вступить в программу «Аэрофлот Бонус»" Style="{DynamicResource lbStyle}" FontSize="26"/>
+
+                <Button Grid.Row ="1" Grid.ColumnSpan="2" Content="Стать участником" Style="{DynamicResource transparentButton}" Margin="25,10,10,10" />
+                <Button Grid.Row ="1" Grid.Column="2" Grid.ColumnSpan="2" Content="Активировать карту" Style="{DynamicResource transparentButton}" Margin="25,10,10,10"/>
+                <Button Grid.Row ="1" Grid.Column="4" Grid.ColumnSpan="2" Content="Активировать ЛК" Style="{DynamicResource transparentButton}" Margin="25,10,10,10"/>
+            </Grid>
+        </StackPanel>
+
+        <Label Content="*" Grid.Row="3" Grid.ColumnSpan="3" Style="{DynamicResource lbStyle}" Foreground="Red"/>
+        <Label Content="Обязательные поля" Grid.Row="3" Grid.ColumnSpan="3" Style="{DynamicResource lbStyle}" Padding="15,5,5,5"/>
+
+        <Button Grid.Row="3" Grid.Column="10" Grid.ColumnSpan="3" Content="Короткая форма регистрации >" Style="{DynamicResource transparentButton}"/>
+        <Label Content="Регистрационные данные" Grid.Row="4" Grid.ColumnSpan="8" Style="{DynamicResource lbStyle}" FontSize="18" FontWeight="Bold"/>
+
+        <Label Content="Email" Grid.Row="5" Grid.Column="0" Style="{DynamicResource lbStyle}"  />
+        <Label Content="*" Grid.Row="5" Grid.Column="0" Style="{DynamicResource lbStyle}" Foreground="Red" HorizontalContentAlignment="Right" Padding="5,5,50,5"/>
+
+        <Label Content="Фамилия" Grid.Row="5" Grid.Column="3" Style="{DynamicResource lbStyle}" />
+        <Label Content="*" Grid.Row="5" Grid.Column="3" Style="{DynamicResource lbStyle}"  Foreground="Red" HorizontalContentAlignment="Right" Padding="5,5,30,5"/>
+
+        <Label Content="Имя" Grid.Row="5" Grid.Column="6" Style="{DynamicResource lbStyle}"/>
+        <Label Content="*" Grid.Row="5" Grid.Column="6" Style="{DynamicResource lbStyle}"  Foreground="Red" HorizontalContentAlignment="Right" Padding="5,5,55,5"/>
+
+        <Label Content="Дата рождения" Grid.Row="5" Grid.Column="9" Grid.ColumnSpan="2" Style="{DynamicResource lbStyle}" HorizontalAlignment="Left" Margin="0,0,0,0" />
+        <Label Content="*" Grid.Row="5" Grid.Column="9" Grid.ColumnSpan="2" Style="{DynamicResource lbStyle}"  Foreground="Red"  Margin="0,0,0,0" HorizontalContentAlignment="Right" Padding="5,5,120,5"/>
+
+        <Label Content="Пол" Grid.Row="5" Grid.Column="11" Style="{DynamicResource lbStyle}"  Margin="0,0,0,0" />
+        <Label Content="*" Grid.Row="5" Grid.Column="11" Style="{DynamicResource lbStyle}" Foreground="Red" Margin="0,0,0,0" HorizontalContentAlignment="Right" Padding="5,5,70,5" />
+
+
+
+        <TextBlock x:Name="emailTBL" Grid.Row="6" Grid.ColumnSpan="3" Text="Address@domain.ru" Style="{DynamicResource tblStyle}" />
+        <TextBox x:Name="emailTB" Grid.Row="6" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}" GotFocus="emailTB_GotFocus" LostFocus="emailTB_LostFocus"/>
+
+
+        <TextBlock x:Name="surnameTBL" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="3" Text="Латинскими буквами" Style="{DynamicResource tblStyle}"/>
+        <TextBox x:Name="surnameTB" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}" GotFocus="surnameTB_GotFocus" LostFocus="surnameTB_LostFocus"/>
+
+
+        <TextBlock x:Name="nameTBL" Grid.Row="6" Grid.Column="6" Grid.ColumnSpan="3" Text="Латинскими буквами" Style="{DynamicResource tblStyle}"/>
+        <TextBox x:Name="nameTB" Grid.Row="6" Grid.Column="6" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}" GotFocus="nameTB_GotFocus" LostFocus="nameTB_LostFocus"/>
+
+        <DatePicker Grid.Row="6" Grid.Column="9" Grid.ColumnSpan="2" DisplayDateStart="1970-01-01" SelectedDateFormat="Short" Style="{DynamicResource dpStyle}"/>
+
+        <Button Grid.Row="6" Grid.Column="11" Content="М" Style="{DynamicResource roundButton}" Margin="0,0,60,30"/>
+        <Button Grid.Row="6" Grid.Column="11" Content="Ж" Style="{DynamicResource roundButton}" Margin="50,0,10,30"/>
+
+        <Label Content="Пароль" Grid.Row="7" Grid.Column="0" Style="{DynamicResource lbStyle}"/>
+        <Label Content="*" Grid.Row="7" Grid.Column="0" Style="{DynamicResource lbStyle}" Foreground="Red" Margin="0,0,0,0" HorizontalContentAlignment="Right" Padding="5,5,40,5" />
+
+        <Label Content="Повторите пароль" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2" Style="{DynamicResource lbStyle}" />
+        <Label Content="*" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2" Style="{DynamicResource lbStyle}" Foreground="Red" Margin="0,0,20,0" HorizontalAlignment="Right" Padding="5,5,70,5" />
+
+
+        <Button x:Name="showPasswordBUT" Grid.Row="7" Grid.Column="2" Content="Показать" Style="{DynamicResource showPassButGray}" Click="showPasswordBUT_Click" />
+        <Button x:Name="showRepeatPasswordBUT" Grid.Row="7" Grid.Column="5" Content="Показать" Style="{DynamicResource showPassButGray}" Click="showRepeatPasswordBUT_Click" />
+
+
+        <TextBlock x:Name="passwordTBL" Grid.Row="8" Grid.ColumnSpan="3" Text="Не мении восьми символов" Style="{DynamicResource tblStyle}"/>
+        <TextBox x:Name="passwordTB" Grid.Row="8" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}" Visibility="Hidden" GotFocus="passwordTB_GotFocus" LostFocus="passwordTB_LostFocus" FontSize="18"/>
+        <PasswordBox x:Name="passwordPB" Grid.Row="8" Grid.ColumnSpan="3" Style="{DynamicResource pbStyle}" GotFocus="passwordPB_GotFocus" LostFocus="passwordPB_LostFocus" KeyDown="passwordPB_KeyDown"/>
+
+        <TextBlock x:Name="repeatPasswordTBL" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="3" Text="Пароли должны совподать" Style="{DynamicResource tblStyle}"/>
+        <TextBox x:Name="repeatPasswordTB" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}" Visibility="Hidden" GotFocus="repeatPasswordTB_GotFocus" LostFocus="repeatPasswordTB_LostFocus" FontSize="18"/>
+        <PasswordBox x:Name="repeatPasswordPB" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="3" Style="{DynamicResource pbStyle}" GotFocus="repeatPasswordPB_GotFocus" LostFocus="repeatPasswordPB_LostFocus" KeyDown="repeatPasswordPB_KeyDown"/>
+
+        <Button x:Name="generatePasswordBut" Grid.Row="7" Grid.RowSpan="2"  Grid.Column="6" Grid.ColumnSpan="3" Content="СГЕНЕРИРОВАТЬ ПАРОЛЬ" Style="{DynamicResource transparentButton}" Margin="10,0,10,45" VerticalAlignment="Bottom" Click="generatePasswordBut_Click"/>
+
+        <Label Grid.Row="9" Content="Секретный вопрос" Grid.ColumnSpan="3" Style="{DynamicResource lbStyle}"/>
+        <Label Content="*" Grid.Row="9" Grid.Column="1" Style="{DynamicResource lbStyle}" Foreground="Red" Margin="0,0,20,0" HorizontalAlignment="Right" Padding="5,5,65,5" />
+
+        <Label Grid.Row="9" Grid.Column="6" Content="Ответ на секретный вопрос " Grid.ColumnSpan="3" Style="{DynamicResource lbStyle}"/>
+        <Label Content="*" Grid.Row="9" Grid.Column="7" Style="{DynamicResource lbStyle}" Foreground="Red" Margin="0,0,0,0" HorizontalAlignment="Right" Padding="5,5,40,5" />
+
+        <ComboBox Grid.Row="10" Grid.ColumnSpan="6" Style="{DynamicResource cbStyle}" >
+            <ComboBoxItem Content="Выберите" Style="{DynamicResource cbItemStyle}"/>
+            <ComboBoxItem Content="Девичья фамилия бабушки"/>
+            <ComboBoxItem Content="Дата рождения дедушки"/>
+            <ComboBoxItem Content="Номер телефона друга или подруги"/>
+            <ComboBoxItem Content="Название любимой книги"/>
+            <ComboBoxItem Content="Как звалим вашего первого питомца"/>
+        </ComboBox>
+
+        <TextBlock x:Name="answerToQuestionTBL" Grid.Row="10" Grid.Column="6" Grid.ColumnSpan="6" Text="Не мении пяти символов" Style="{DynamicResource tblStyle}"/>
+        <TextBox x:Name="answerToQuestionTB" Grid.Row="10" Grid.Column="6" Grid.ColumnSpan="6" Style="{DynamicResource tbStyle}" GotFocus="answerToQuestionTB_GotFocus" LostFocus="answerToQuestionTB_LostFocus"/>
+
+        <TextBlock Grid.Row="12" Grid.ColumnSpan="3" Text="Выберите" Style="{DynamicResource tblStyle}"/>
+        <Label Grid.Row="11" Grid.ColumnSpan="3" Content="Языка корреспонденции" Style="{DynamicResource lbStyle}"/>
+        <Label Content="*" Grid.Row="11" Grid.ColumnSpan="2" Style="{DynamicResource lbStyle}" Foreground="Red" Margin="0,0,0,0" HorizontalAlignment="Right" Padding="5,5,55,5" />
+
+        <ComboBox Grid.Row="12" Grid.ColumnSpan="3" Style="{DynamicResource cbStyle}">
+            <ComboBoxItem Content="Выберите" Style="{DynamicResource cbItemStyle}"/>
+            <ComboBoxItem Content="Русский"/>
+            <ComboBoxItem Content="English"/>
+        </ComboBox>
+
+
+        <Rectangle Fill="Gray" Height="1" Grid.Row="13" Grid.ColumnSpan="13"/>
+
+        <Label Grid.Row="14" Grid.ColumnSpan="13" Content="Телефон" Style="{DynamicResource lbStyle}" FontSize="18" FontWeight="Bold"/>
+
+        <Label Grid.Row="15" Grid.ColumnSpan="13" Content="Номер телефона" Style="{DynamicResource lbStyle}"/>
+        <Label Content="*" Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="2" Style="{DynamicResource lbStyle}" Foreground="Red" Margin="0,0,0,0" HorizontalAlignment="Right" Padding="5,5,95,5" />
+
+
+        <ComboBox Name="countryPhoneCB" Grid.Row="16" Style="{DynamicResource cbStyle}" SelectionChanged="countryPhoneCB_SelectionChanged">
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/Australia.png" Width="35" Height="18"/>
+                    <TextBlock Text="Австралия (+61)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/Argentina.png" Width="35" Height="18"/>
+                    <TextBlock Text="Аргентина (+54)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/Brazil.png" Width="35" Height="18"/>
+                    <TextBlock Text="Бразилия (+55)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/India.png" Width="35" Height="18"/>
+                    <TextBlock Text="Индия (+91)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/Indonesia.png" Width="35" Height="18"/>
+                    <TextBlock Text="Австралия (+62)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/Canada.png" Width="35" Height="18"/>
+                    <TextBlock Text="Канада (+1)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/China.png" Width="35" Height="18"/>
+                    <TextBlock Text="Китай (+86)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/Mexico.png" Width="35" Height="18"/>
+                    <TextBlock Text="Мексика (+52)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem IsSelected="True">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/Russia.png" Width="35" Height="18"/>
+                    <TextBlock Text="Россия (+7)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Resources/CountryFlags/USA.png" Width="35" Height="18"/>
+                    <TextBlock Text="США (+1)" Margin="50,0,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
+        </ComboBox>
+
+        <TextBox x:Name="countryPhoneTB" Grid.Row="16" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}" Margin="88,0,20,40" Text="+7" PreviewTextInput="countryPhoneTB_PreviewTextInput"/>
+
+        <Rectangle Fill="Gray" Height="1" Grid.Row="17" Grid.ColumnSpan="13"/>
+
+        <Button x:Name="openCardStackBut" Grid.Row="18" Grid.ColumnSpan="4" Content="Адрес отправки карты" Click="openCardStackBut_Click" Style="{DynamicResource openButton}"/>
+        <Button x:Name="arrCardBut" Grid.Row="18" Grid.Column="3" Content="▼" Click="arrCardBut_Click" Style="{DynamicResource openButton}" Foreground="#4a90e2" HorizontalAlignment="Right"/>
+
+        <StackPanel x:Name="cardStack" Grid.Row="19" Grid.ColumnSpan="13" Grid.RowSpan="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Тип адреса" Style="{DynamicResource lbStyle}"/>
+                <Label Content="*" Grid.Row="0" Grid.Column="0" Style="{DynamicResource lbStyle}" Foreground="Red" Margin="0,0,0,0" HorizontalAlignment="Right" Padding="5,5,15,5" />
+
+                <Label Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Content="Страна" Style="{DynamicResource lbStyle}"/>
+                <Label Content="*" Grid.Row="0" Grid.Column="3" Style="{DynamicResource lbStyle}" Foreground="Red" Margin="0,0,0,0" HorizontalAlignment="Right" Padding="5,5,35,5" />
+
+                <Label Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="3" Content="Регион/область" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="3" Content="Город (населенный пункт) *" Style="{DynamicResource lbStyle}"/>
+
+
+                <ComboBox Grid.Row="1" Grid.ColumnSpan="3" Style="{DynamicResource cbStyle}">
+                    <ComboBoxItem Content="Выберите" Style="{DynamicResource cbItemStyle}"/>
+                    <ComboBoxItem Content="Домашний адрес"/>
+                    <ComboBoxItem Content="Рабочий адрес"/>
+                </ComboBox>
+
+
+                <ComboBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Style="{DynamicResource cbStyle}">
+                    <ComboBoxItem Content="Выберите" Style="{DynamicResource cbItemStyle}"/>
+                    <ComboBoxItem Content="Россия"/>
+                    <ComboBoxItem Content="США"/>
+                    <ComboBoxItem Content="Китай"/>
+                    <ComboBoxItem Content="Канада"/>
+                    <ComboBoxItem Content="Бразилия"/>
+                    <ComboBoxItem Content="Мексика"/>
+                    <ComboBoxItem Content="Аргентина"/>
+                    <ComboBoxItem Content="Австралия"/>
+                    <ComboBoxItem Content="Индия"/>
+                    <ComboBoxItem Content="Индонезия"/>
+                </ComboBox>
+
+
+                <TextBox Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}"/>
+                <TextBox Grid.Row="1" Grid.Column="9" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}"/>
+
+                <Label Grid.Row="2" Grid.ColumnSpan="3" Content="Улица" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Content="Дом №" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" Content="Корпус" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="2" Grid.Column="7" Grid.ColumnSpan="2" Content="Строение" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="2" Grid.Column="9" Grid.ColumnSpan="2" Content="Квартира/офис" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="2" Grid.Column="11" Grid.ColumnSpan="2" Content="Индекс" Style="{DynamicResource lbStyle}"/>
+
+                <TextBox Grid.Row="3" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}"/>
+                <TextBox Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Style="{DynamicResource tbStyle}"/>
+                <TextBox Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="2" Style="{DynamicResource tbStyle}"/>
+                <TextBox Grid.Row="3" Grid.Column="7" Grid.ColumnSpan="2" Style="{DynamicResource tbStyle}"/>
+                <TextBox Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="2" Style="{DynamicResource tbStyle}"/>
+                <TextBox Grid.Row="3" Grid.Column="11" Grid.ColumnSpan="2" Style="{DynamicResource tbStyle}"/>
+            </Grid>
+        </StackPanel>
+
+        <Rectangle Fill="Gray" Height="1" Grid.Row="24" Grid.ColumnSpan="13"/>
+
+        <Button x:Name="openPersDataStackBut" Grid.Row="25" Grid.ColumnSpan="4" Content="Дополнительные личные данные" Click="openPersDataStackBut_Click" Style="{DynamicResource openButton}"/>
+        <Button x:Name="arrPersDataBut" Grid.Row="25" Grid.Column="3" Content="▼" Click="arrPersDataBut_Click" Style="{DynamicResource openButton}" Foreground="#4a90e2" HorizontalAlignment="Right"/>
+
+        <StackPanel x:Name="persDataStack" Grid.Row="26" Grid.ColumnSpan="13" Grid.RowSpan="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Фамилия"  Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Content="Имя"  Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="3" Content="Отчество" Style="{DynamicResource lbStyle}"/>
+
+                <TextBlock x:Name="extraNameTBL" Grid.Row="1" Grid.ColumnSpan="3" Text="Кириллицей" Style="{DynamicResource tblStyle}"/>
+                <TextBox x:Name="extraNameTB" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}" GotFocus="extraNameTB_GotFocus" LostFocus="extraNameTB_LostFocus"/>
+
+                <TextBlock x:Name="extraSurnameTBL" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Text="Кириллицей" Style="{DynamicResource tblStyle}"/>
+                <TextBox x:Name="extraSurnameTB" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}" GotFocus="extraSurnameTB_GotFocus" LostFocus="extraSurnameTB_LostFocus"/>
+
+                <TextBlock x:Name="patronymicTBL" Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="3" Text="Кириллицей" Style="{DynamicResource tblStyle}"/>
+                <TextBox x:Name="patronymicTB" Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}" GotFocus="patronymicTB_GotFocus" LostFocus="patronymicTB_LostFocus"/>
+
+
+                <Label Grid.Row="2" Grid.ColumnSpan="3" Content="Род деятельности" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Content="Должность" Style="{DynamicResource lbStyle}"/>
+
+
+                <ComboBox Grid.Row="3" Grid.ColumnSpan="3" Style="{DynamicResource cbStyle}">
+                    <ComboBoxItem Content="Выберите" Style="{DynamicResource cbItemStyle}"/>
+                    <ComboBoxItem Content="IT, Телеком"/>
+                    <ComboBoxItem Content="Банки, инвестиции"/>
+                    <ComboBoxItem Content="Безопастность"/>
+                    <ComboBoxItem Content="Гос. служба"/>
+                    <ComboBoxItem Content="Отели"/>
+                    <ComboBoxItem Content="Рестораны"/>
+                </ComboBox>
+
+
+                <TextBox Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}"/>
+            </Grid>
+        </StackPanel>
+
+        <Rectangle Fill="Gray" Height="1" Grid.Row="31" Grid.ColumnSpan="13"/>
+
+        <Button x:Name="openPassportStackBut" Grid.Row="32" Grid.ColumnSpan="4" Content="Паспортные данные" Click="openPassportStackBut_Click" Style="{DynamicResource openButton}"/>
+        <Button x:Name="arrPassportDataBut" Grid.Row="32" Grid.Column="3" Content="▼" Click="arrPassportDataBut_Click" Style="{DynamicResource openButton}" Foreground="#4a90e2" HorizontalAlignment="Right"/>
+
+
+        <StackPanel x:Name="passportStack" Grid.Row="33" Grid.ColumnSpan="13" Grid.RowSpan="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Основной паспорт:" Style="{DynamicResource lbStyle}"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Content="Тип документа" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Content="Страна выдачи" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="3" Content="Серия и номер" Style="{DynamicResource lbStyle}"/>
+                <Label Grid.Row="1" Grid.Column="9" Grid.ColumnSpan="3" Content="Срок действия" Style="{DynamicResource lbStyle}" HorizontalAlignment="Left" Margin="0,0,0,0"/>
+
+
+                <ComboBox Grid.Row="2" Grid.ColumnSpan="3" Style="{DynamicResource cbStyle}">
+                    <ComboBoxItem Content="Выберите" Style="{DynamicResource cbItemStyle}"/>
+                    <ComboBoxItem Content="Внутренний паспорт"/>
+                    <ComboBoxItem Content="Заграничный паспорт"/>
+                    <ComboBoxItem Content="Свидетельство о рождении"/>
+                </ComboBox>
+
+                <ComboBox Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Style="{DynamicResource cbStyle}">
+                    <ComboBoxItem Content="Выберите" Style="{DynamicResource cbItemStyle}"/>
+                    <ComboBoxItem Content="Россия"/>
+                    <ComboBoxItem Content="США"/>
+                    <ComboBoxItem Content="Китай"/>
+                    <ComboBoxItem Content="Канада"/>
+                    <ComboBoxItem Content="Бразилия"/>
+                    <ComboBoxItem Content="Мексика"/>
+                    <ComboBoxItem Content="Аргентина"/>
+                    <ComboBoxItem Content="Австралия"/>
+                    <ComboBoxItem Content="Индия"/>
+                    <ComboBoxItem Content="Индонезия"/>
+                </ComboBox>
+
+
+                <TextBox Grid.Row="2" Grid.Column="6" Grid.ColumnSpan="3" Style="{DynamicResource tbStyle}"/>
+                <DatePicker x:Name="passportDP" Grid.Row="2" Grid.Column="9" Grid.ColumnSpan="3" DisplayDateStart="1970-01-01" SelectedDateFormat="Short" Style="{DynamicResource dpStyle}"/>
+
+                <Button x:Name="hyperButPass" Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="3" Content="Бессрочно" Click="hyperButPass_Click" Style="{DynamicResource showPassBut}" VerticalAlignment="Bottom" Margin="0,0,0,15"/>
+
+
+                <Label Grid.Row="4" Grid.ColumnSpan="3" Content="Дополнительный паспорт:" Style="{DynamicResource lbStyle}"/>
+
+                <Button x:Name="addMorePassportBut" Grid.Row="5" Grid.ColumnSpan="3" Content="+ Добавить еще один" Click="addMorePassportBut_Click" Style="{DynamicResource showPassBut}"/>
+
+                <Label x:Name="documentTypeLab" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Content="Тип документа" Visibility="Hidden" Style="{DynamicResource lbStyle}"/>
+                <Label x:Name="countryLab" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="3" Content="Страна выдачи" Visibility="Hidden" Style="{DynamicResource lbStyle}"/>
+                <Label x:Name="seriesNumberLab" Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="3" Content="Серия и номер" Visibility="Hidden" Style="{DynamicResource lbStyle}"/>
+                <Label x:Name="addPassportLab" Grid.Row="5" Grid.Column="9" Grid.ColumnSpan="3" Content="Срок действия" Visibility="Hidden" Style="{DynamicResource lbStyle}" HorizontalAlignment="Left" Margin="0,0,0,0"/>
+
+
+                <ComboBox x:Name="documentTypeCB" Grid.Row="6" Grid.ColumnSpan="3" Visibility="Hidden" Style="{DynamicResource cbStyle}">
+                    <ComboBoxItem Content="Выберите" Style="{DynamicResource cbItemStyle}"/>
+                    <ComboBoxItem Content="Внутренний паспорт"/>
+                    <ComboBoxItem Content="Заграничный паспорт"/>
+                    <ComboBoxItem Content="Свидетельство о рождении"/>
+                </ComboBox>
+
+
+                <ComboBox x:Name="countryCB" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="3" Visibility="Hidden" Style="{DynamicResource cbStyle}">
+                    <ComboBoxItem Content="Выберите" Style="{DynamicResource cbItemStyle}"/>
+                    <ComboBoxItem Content="Россия"/>
+                    <ComboBoxItem Content="США"/>
+                    <ComboBoxItem Content="Китай"/>
+                    <ComboBoxItem Content="Канада"/>
+                    <ComboBoxItem Content="Бразилия"/>
+                    <ComboBoxItem Content="Мексика"/>
+                    <ComboBoxItem Content="Аргентина"/>
+                    <ComboBoxItem Content="Австралия"/>
+                    <ComboBoxItem Content="Индия"/>
+                    <ComboBoxItem Content="Индонезия"/>
+                </ComboBox>
+
+
+
+                <TextBox x:Name="seriesNumberTB" Grid.Row="6" Grid.Column="6" Grid.ColumnSpan="3" Visibility="Hidden" Style="{DynamicResource tbStyle}"/>
+
+                <DatePicker x:Name="addPassportDP" Grid.Row="6" Grid.Column="9" Grid.ColumnSpan="3" DisplayDateStart="1970-01-01" SelectedDateFormat="Short" Visibility="Hidden" Style="{DynamicResource dpStyle}"/>
+
+                <Button x:Name="CansAddPassport" Grid.Row="6" Grid.Column="10" Content="X" Click="CansAddPassport_Click" Visibility="Hidden" Style="{DynamicResource showPassBut}" Background="Gray" Foreground="White" FontSize="20" Margin="0,0,70,43" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+                <Button x:Name="indefinitelyBut" Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="3" Content="Бессрочно" Visibility="Hidden" Click="indefinitelyBut_Click" Style="{DynamicResource showPassBut}" VerticalAlignment="Bottom" Margin="0,0,0,15"/>
+
+            </Grid>
+        </StackPanel>
+        <Rectangle Fill="Gray" Height="1" Grid.Row="38" Grid.ColumnSpan="13" VerticalAlignment="Bottom"/>
+
+    </Grid>
+
+
+
+</Page>
